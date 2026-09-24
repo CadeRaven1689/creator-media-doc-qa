@@ -1,5 +1,7 @@
 const base = process.env.SERVICE_URL ?? "http://localhost:3000";
 
+export {};
+
 async function post(path: string, body: unknown) {
   const response = await fetch(`${base}${path}`, {
     method: "POST",
